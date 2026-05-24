@@ -15,7 +15,7 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'IBM Plex Mono',monospace;background:var(--bg);color:var(--text);min-height:100vh;}
 body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.025) 2px,rgba(0,0,0,.025) 4px);pointer-events:none;z-index:9999;}
-
+ 
 /* HEADER */
 .header{background:var(--panel);border-bottom:1px solid var(--border);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;position:sticky;top:0;z-index:100;}
 .logo{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:900;letter-spacing:2px;color:var(--accent);}
@@ -27,7 +27,7 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
 @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
 .status-txt{font-size:11px;color:var(--dim);letter-spacing:1px;}
 .last-update{font-size:10px;color:var(--dim);}
-
+ 
 /* PAIR SELECTOR */
 .pair-bar{background:var(--panel);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;}
 .pair-search{background:var(--bg);border:1px solid var(--border);color:var(--text);font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:700;letter-spacing:2px;padding:8px 14px;border-radius:8px;outline:none;width:180px;text-transform:uppercase;}
@@ -41,15 +41,15 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
 .quick-pairs{display:flex;gap:6px;flex-wrap:wrap;}
 .qpair{padding:4px 10px;font-size:11px;background:var(--muted);border:1px solid var(--border);border-radius:4px;cursor:pointer;color:var(--dim);transition:all .2s;font-family:'IBM Plex Mono',monospace;}
 .qpair:hover{border-color:var(--accent);color:var(--accent);}
-
+ 
 /* MAIN LAYOUT */
 .main{display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:calc(100vh - 120px);}
 .left-panel{border-right:1px solid var(--border);padding:20px 24px;overflow-y:auto;}
 .right-panel{padding:20px 24px;overflow-y:auto;}
-
+ 
 /* SECTION TITLE */
 .sec{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--dim);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--border);}
-
+ 
 /* SIGNAL CONDITIONS */
 .signal-row{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:var(--muted);margin-bottom:8px;transition:all .3s;}
 .signal-row.yes{border-color:var(--green);background:rgba(0,255,157,.05);}
@@ -73,7 +73,7 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
 .override-btn{font-size:9px;padding:2px 7px;border-radius:3px;cursor:pointer;font-family:'IBM Plex Mono',monospace;border:1px solid var(--border);background:transparent;color:var(--dim);transition:all .2s;}
 .override-btn:hover{border-color:var(--accent);color:var(--accent);}
 .override-btn.active{border-color:var(--accent);color:var(--accent);}
-
+ 
 /* PRICE INPUTS */
 .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;}
 .inp-group{display:flex;flex-direction:column;gap:5px;}
@@ -81,7 +81,7 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
 .inp-field{background:var(--bg);border:1px solid var(--border);color:var(--text);font-family:'IBM Plex Mono',monospace;font-size:13px;padding:8px 12px;border-radius:6px;outline:none;transition:border-color .2s;}
 .inp-field:focus{border-color:var(--accent);}
 .inp-select{background:var(--bg);border:1px solid var(--border);color:var(--text);font-family:'IBM Plex Mono',monospace;font-size:12px;padding:8px 12px;border-radius:6px;outline:none;cursor:pointer;}
-
+ 
 /* SCORE */
 .score-ring{width:120px;height:120px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;border:4px solid var(--border);margin:0 auto 16px;transition:border-color .3s,box-shadow .3s;}
 .score-ring.gold{border-color:var(--yellow);box-shadow:0 0 30px rgba(255,215,0,.3);}
@@ -91,7 +91,7 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
 .score-of{font-size:11px;color:var(--dim);letter-spacing:1px;}
 .score-bar-wrap{height:6px;background:var(--muted);border-radius:3px;overflow:hidden;margin-bottom:16px;}
 .score-bar{height:100%;border-radius:3px;transition:width .5s,background .3s;}
-
+ 
 /* VERDICT */
 .verdict{border-radius:12px;padding:20px;text-align:center;margin-bottom:16px;border:2px solid var(--border);transition:all .3s;}
 .verdict.gold{background:rgba(255,215,0,.07);border-color:rgba(255,215,0,.5);}
@@ -102,7 +102,7 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
 .verdict-title.good{color:var(--green);}
 .verdict-title.skip{color:var(--red);}
 .verdict-desc{font-size:11px;line-height:1.7;}
-
+ 
 /* OUTPUT GRID */
 .out-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px;}
 .out-item{background:var(--muted);border:1px solid var(--border);border-radius:8px;padding:12px;}
@@ -114,22 +114,22 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
 .out-value.accent{color:var(--accent);}
 .out-value.purple{color:var(--purple);}
 .out-value.dim{color:var(--dim);}
-
+ 
 /* CHECKLIST */
 .checklist{background:var(--muted);border:1px solid var(--border);border-radius:10px;padding:14px;margin-bottom:14px;}
 .check-item{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:11px;line-height:1.4;}
 .check-icon{width:16px;flex-shrink:0;text-align:center;}
-
+ 
 /* LOG BUTTON */
 .log-btn{width:100%;padding:13px;background:linear-gradient(135deg,var(--accent),#0099bb);color:var(--bg);font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:700;border:none;border-radius:10px;cursor:pointer;letter-spacing:1px;text-transform:uppercase;transition:all .2s;margin-bottom:8px;}
 .log-btn:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,212,255,.25);}
 .log-btn.gold-btn{background:linear-gradient(135deg,var(--yellow),var(--orange));color:var(--bg);}
 .reset-btn{width:100%;padding:10px;background:transparent;color:var(--dim);font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;border:1px solid var(--border);border-radius:8px;cursor:pointer;letter-spacing:1px;text-transform:uppercase;transition:all .2s;}
 .reset-btn:hover{border-color:var(--dim);color:var(--text);}
-
+ 
 /* ERROR */
 .error-bar{background:rgba(255,51,85,.1);border:1px solid rgba(255,51,85,.3);color:var(--red);padding:10px 16px;font-size:11px;display:none;}
-
+ 
 /* MOBILE */
 @media(max-width:768px){
   .main{grid-template-columns:1fr;}
@@ -138,7 +138,7 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
 </style>
 </head>
 <body>
-
+ 
 <!-- HEADER -->
 <div class="header">
   <div class="logo">QV <span>Decision</span><span class="tag">LIVE</span></div>
@@ -148,10 +148,10 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
     <div class="last-update" id="lastUpdate"></div>
   </div>
 </div>
-
+ 
 <!-- ERROR BAR -->
 <div class="error-bar" id="errorBar"></div>
-
+ 
 <!-- PAIR SELECTOR -->
 <div class="pair-bar">
   <input class="pair-search" id="pairInput" type="text" value="NEARUSDT" placeholder="BTCUSDT" maxlength="20">
@@ -163,6 +163,7 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
     </div>
     <span class="pair-vol" id="pairVol">24h Vol: —</span>
   </div>
+  <div style="font-size:10px;color:var(--dim);letter-spacing:1px;margin-top:4px;">Type ANY pair above or quick load:</div>
   <div class="quick-pairs">
     <span class="qpair" onclick="quickLoad('NEARUSDT')">NEAR</span>
     <span class="qpair" onclick="quickLoad('TAOUSDT')">TAO</span>
@@ -173,17 +174,22 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
     <span class="qpair" onclick="quickLoad('BNBUSDT')">BNB</span>
     <span class="qpair" onclick="quickLoad('ZECUSDT')">ZEC</span>
     <span class="qpair" onclick="quickLoad('FIDAUSDT')">FIDA</span>
+    <span class="qpair" onclick="quickLoad('DASHUSDT')">DASH</span>
+    <span class="qpair" onclick="quickLoad('BBUSDT')">BB</span>
+    <span class="qpair" onclick="quickLoad('JTOUSDT')">JTO</span>
+    <span class="qpair" onclick="quickLoad('WLDUSDT')">WLD</span>
+    <span class="qpair" onclick="quickLoad('COSUSDT')">COS</span>
   </div>
 </div>
-
+ 
 <!-- MAIN -->
 <div class="main">
-
+ 
   <!-- LEFT: CONDITIONS -->
   <div class="left-panel">
-
+ 
     <div class="sec">Live Scanner Conditions — Auto from Binance</div>
-
+ 
     <!-- SESSION VOL -->
     <div class="signal-row" id="row-sess">
       <div class="sig-left">
@@ -198,7 +204,7 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
         <button class="override-btn" onclick="overrideSig('sess')" id="ovr-sess" title="Override">✎</button>
       </div>
     </div>
-
+ 
     <!-- QV DOLLAR -->
     <div class="signal-row" id="row-qv">
       <div class="sig-left">
@@ -213,7 +219,7 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
         <button class="override-btn" onclick="overrideSig('qv')" id="ovr-qv" title="Override">✎</button>
       </div>
     </div>
-
+ 
     <!-- RELATIVE VOL -->
     <div class="signal-row" id="row-rv">
       <div class="sig-left">
@@ -228,7 +234,7 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
         <button class="override-btn" onclick="overrideSig('rv')" id="ovr-rv" title="Override">✎</button>
       </div>
     </div>
-
+ 
     <!-- BUY PRESSURE -->
     <div class="signal-row" id="row-bp">
       <div class="sig-left">
@@ -243,7 +249,7 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
         <button class="override-btn" onclick="overrideSig('bp')" id="ovr-bp" title="Override">✎</button>
       </div>
     </div>
-
+ 
     <!-- WHALE -->
     <div class="signal-row" id="row-whale">
       <div class="sig-left">
@@ -258,7 +264,7 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
         <button class="override-btn" onclick="overrideSig('whale')" id="ovr-whale" title="Override">✎</button>
       </div>
     </div>
-
+ 
     <!-- VWAP BOUNCE — manual only -->
     <div class="signal-row" id="row-vwap">
       <div class="sig-left">
@@ -276,11 +282,11 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
         </div>
       </div>
     </div>
-
+ 
     <!-- DIVIDER -->
     <div style="height:20px;"></div>
     <div class="sec">Account & Price Levels</div>
-
+ 
     <!-- ACCOUNT + PRICES -->
     <div class="price-grid">
       <div class="inp-group">
@@ -317,39 +323,39 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
         </select>
       </div>
     </div>
-
+ 
     <!-- WHALE THRESHOLD -->
     <div class="inp-group" style="margin-bottom:8px;">
       <label class="inp-label">Whale Detection Threshold ($)</label>
       <input class="inp-field" id="whaleThresh" type="number" value="100000" step="10000">
     </div>
-
+ 
     <!-- REFRESH -->
     <button class="load-btn" style="width:100%;margin-top:8px;" onclick="refreshData()">↺ Refresh Live Data</button>
-
+ 
   </div>
-
+ 
   <!-- RIGHT: OUTPUT -->
   <div class="right-panel">
-
+ 
     <div class="sec">Signal Score & Decision</div>
-
+ 
     <!-- SCORE RING -->
     <div class="score-ring" id="scoreRing">
       <div class="score-big" id="scoreBig" style="color:var(--dim)">—</div>
       <div class="score-of">/ 6 signals</div>
     </div>
-
+ 
     <div class="score-bar-wrap">
       <div class="score-bar" id="scoreBar" style="width:0%;background:var(--red)"></div>
     </div>
-
+ 
     <!-- VERDICT -->
     <div class="verdict" id="verdictBox">
       <div class="verdict-title dim" id="verdictTitle" style="color:var(--dim)">WAITING</div>
       <div class="verdict-desc" id="verdictDesc" style="color:var(--dim)">Load a pair and enter price levels to get a decision</div>
     </div>
-
+ 
     <!-- OUTPUT GRID -->
     <div class="sec">Position Sizing Output</div>
     <div class="out-grid">
@@ -386,20 +392,20 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
         <div class="out-value" id="oGrade">—</div>
       </div>
     </div>
-
+ 
     <!-- CHECKLIST -->
     <div class="sec">Pre-Trade Checklist</div>
     <div class="checklist" id="checklistEl">
       <div style="color:var(--dim);font-size:11px;">Load a pair to see checklist</div>
     </div>
-
+ 
     <!-- ACTIONS -->
     <button class="log-btn" id="logBtn" onclick="logTrade()">→ Log This Trade Setup</button>
     <button class="reset-btn" onclick="resetAll()">↺ Reset All Conditions</button>
-
+ 
   </div>
 </div>
-
+ 
 <!-- LOG MODAL -->
 <div id="logModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:1000;display:flex;align-items:center;justify-content:center;display:none;">
   <div style="background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:28px;max-width:420px;width:90%;">
@@ -411,7 +417,7 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
     </div>
   </div>
 </div>
-
+ 
 <script>
 // ═══════════════════════════════════════════
 //  STATE
@@ -431,7 +437,7 @@ let signals = { sess: null, qv: null, rv: null, bp: null, whale: null, vwap: nul
 let overrides = { sess: false, qv: false, rv: false, bp: false, whale: false };
 let refreshTimer = null;
 let depthTimer = null;
-
+ 
 // ═══════════════════════════════════════════
 //  FORMAT HELPERS
 // ═══════════════════════════════════════════
@@ -451,7 +457,7 @@ function fmtPrice(n){
   return n.toFixed(8);
 }
 function clamp(v,lo,hi){ return Math.max(lo,Math.min(hi,v)); }
-
+ 
 // ═══════════════════════════════════════════
 //  QUICK LOAD
 // ═══════════════════════════════════════════
@@ -459,64 +465,64 @@ function quickLoad(pair){
   document.getElementById('pairInput').value = pair;
   loadPair();
 }
-
+ 
 // ═══════════════════════════════════════════
 //  LOAD PAIR — fetch initial data + connect WS
 // ═══════════════════════════════════════════
 async function loadPair(){
   const pair = document.getElementById('pairInput').value.trim().toUpperCase();
   if(!pair.endsWith('USDT')){ showError('Enter a USDT pair e.g. NEARUSDT'); return; }
-
+ 
   currentPair = pair;
   sessionStart = Date.now();
   liveData = { price:0,change:0,vol24:0,high:0,low:0,sessionVol:0,qvDollar:0,relVol:0,bidTotal:0,askTotal:0,buyPct:50,whaleCount:0,lastWhale:null,volHistory:[] };
   signals = { sess:null, qv:null, rv:null, bp:null, whale:null, vwap:null };
   overrides = { sess:false, qv:false, rv:false, bp:false, whale:false };
-
+ 
   setAllBadges('LOADING');
   document.getElementById('pairPrice').textContent = '—';
   document.getElementById('pairChange').textContent = '—';
   document.getElementById('pairVol').textContent = '24h Vol: —';
   document.getElementById('statusTxt').textContent = 'CONNECTING...';
   document.getElementById('pulseDot').classList.add('off');
-
+ 
   const btn = document.getElementById('loadBtn');
   btn.textContent = 'Loading...';
   btn.classList.add('loading');
-
+ 
   try {
     // Fetch 24h ticker
     const res = await fetch(`${REST}/ticker/24hr?symbol=${pair}`);
     if(!res.ok) throw new Error('Pair not found: ' + pair);
     const t = await res.json();
-
+ 
     liveData.price  = parseFloat(t.lastPrice);
     liveData.change = parseFloat(t.priceChangePercent);
     liveData.vol24  = parseFloat(t.quoteVolume);
     liveData.high   = parseFloat(t.highPrice);
     liveData.low    = parseFloat(t.lowPrice);
-
+ 
     updatePairHeader();
-
+ 
     // Fetch klines for relative volume
     await fetchRelativeVolume();
-
+ 
     // Fetch order book depth
     await fetchDepth();
-
+ 
     // Connect websocket
     connectWS();
-
+ 
     btn.textContent = '▶ LOAD PAIR';
     btn.classList.remove('loading');
-
+ 
   } catch(e) {
     showError(e.message);
     btn.textContent = '▶ LOAD PAIR';
     btn.classList.remove('loading');
   }
 }
-
+ 
 // ═══════════════════════════════════════════
 //  RELATIVE VOLUME — fetch klines
 //  5 days × 24h = 120 hourly candles
@@ -524,33 +530,36 @@ async function loadPair(){
 // ═══════════════════════════════════════════
 async function fetchRelativeVolume(){
   try {
-    // Get 5-day hourly klines for average
-    const res = await fetch(`${REST}/klines?symbol=${currentPair}&interval=1h&limit=120`);
-    const klines = await res.json();
-    if(!klines || !klines.length) return;
-
-    // Average hourly quote volume over 5 days
-    const avgHourlyVol = klines.reduce((s,k) => s + parseFloat(k[7]), 0) / klines.length;
-
-    // Session vol estimate — from session start
-    const sessionHours = (Date.now() - sessionStart) / 3600000;
-    liveData.sessionVol = liveData.vol24 * (sessionHours / 24);
-
-    // QV dollar — approximate from last candle
-    // Last kline close: hlc3 * volume estimate
-    const last = klines[klines.length-1];
+    // Fetch 5min klines for last 5 days (1440 candles = 5 days)
+    const res5m = await fetch(`${REST}/klines?symbol=${currentPair}&interval=5m&limit=1440`);
+    const klines5m = await res5m.json();
+    if(!klines5m || !klines5m.length) return;
+ 
+    // Average 5min quote volume over 5 days
+    const avg5mVol = klines5m.reduce((s,k) => s + parseFloat(k[7]), 0) / klines5m.length;
+ 
+    // Current 5min candle — last kline
+    const last = klines5m[klines5m.length-1];
     const h = parseFloat(last[2]), l = parseFloat(last[3]), c = parseFloat(last[4]);
     const hlc3 = (h+l+c)/3;
-    const lastVol = parseFloat(last[5]);
-    liveData.qvDollar = hlc3 * lastVol;
-
-    // Relative volume: current hourly rate vs 5-day average
-    const currentHourlyRate = liveData.vol24 / 24;
-    liveData.relVol = avgHourlyVol > 0 ? currentHourlyRate / avgHourlyVol : 1;
-
-  } catch(e) {}
+    const lastQuoteVol = parseFloat(last[7]); // quote volume (USDT)
+    const lastBaseVol  = parseFloat(last[5]);
+ 
+    // QV Dollar — exact from last 5min candle: hlc3 * base volume
+    liveData.qvDollar = hlc3 * lastBaseVol;
+ 
+    // Relative volume: current 5min vs average 5min
+    liveData.relVol = avg5mVol > 0 ? lastQuoteVol / avg5mVol : 1;
+ 
+    // Session vol — sum today's candles from UTC midnight
+    const nowD = new Date();
+    const utcMidnight = Date.UTC(nowD.getUTCFullYear(), nowD.getUTCMonth(), nowD.getUTCDate());
+    const todayKlines = klines5m.filter(k => parseInt(k[0]) >= utcMidnight);
+    liveData.sessionVol = todayKlines.reduce((s,k) => s + parseFloat(k[7]), 0);
+ 
+  } catch(e) { console.error('fetchRelativeVolume error:', e); }
 }
-
+ 
 // ═══════════════════════════════════════════
 //  ORDER BOOK DEPTH
 // ═══════════════════════════════════════════
@@ -559,28 +568,28 @@ async function fetchDepth(){
     const res = await fetch(`${REST}/depth?symbol=${currentPair}&limit=20`);
     const data = await res.json();
     if(!data.bids || !data.asks) return;
-
+ 
     const bidTotal = data.bids.reduce((s,b) => s+parseFloat(b[0])*parseFloat(b[1]),0);
     const askTotal = data.asks.reduce((s,a) => s+parseFloat(a[0])*parseFloat(a[1]),0);
     const total = bidTotal + askTotal;
-
+ 
     liveData.bidTotal = bidTotal;
     liveData.askTotal = askTotal;
     liveData.buyPct   = total > 0 ? (bidTotal/total)*100 : 50;
-
+ 
   } catch(e) {}
 }
-
+ 
 // ═══════════════════════════════════════════
 //  WEBSOCKET — aggTrade stream for this pair
 // ═══════════════════════════════════════════
 function connectWS(){
   if(ws){ try{ws.close();}catch(e){} ws=null; }
-
+ 
   const sym = currentPair.toLowerCase();
   // Combined stream: miniTicker + aggTrade
   ws = new WebSocket(`wss://stream.binance.com:9443/stream?streams=${sym}@miniTicker/${sym}@aggTrade`);
-
+ 
   ws.onopen = () => {
     document.getElementById('pulseDot').classList.remove('off');
     document.getElementById('statusTxt').textContent = 'LIVE — ' + currentPair;
@@ -588,48 +597,51 @@ function connectWS(){
     updateSignals();
     calcOutput();
   };
-
+ 
   ws.onmessage = (evt) => {
     try {
       const msg  = JSON.parse(evt.data);
       const data = msg.data;
       if(!data) return;
-
+ 
       if(data.e === '24hrMiniTicker'){
         liveData.price  = parseFloat(data.c);
         liveData.high   = parseFloat(data.h);
         liveData.low    = parseFloat(data.l);
         liveData.vol24  = parseFloat(data.q);
         liveData.change = ((liveData.price - parseFloat(data.o)) / parseFloat(data.o)) * 100;
-
-        // Update session vol
-        const sessionHours = (Date.now() - sessionStart) / 3600000;
-        liveData.sessionVol = liveData.vol24 * (sessionHours / 24);
-
-        // QV dollar estimate
+ 
+        // SESSION VOL — use UTC midnight as session start (matches TradingView session indicator)
+        const nowD = new Date();
+        const utcMidnight = Date.UTC(nowD.getUTCFullYear(), nowD.getUTCMonth(), nowD.getUTCDate());
+        const hoursElapsed = (Date.now() - utcMidnight) / 3600000;
+        liveData.sessionVol = liveData.vol24 * (hoursElapsed / 24);
+ 
+        // QV dollar — hlc3 * 5min volume estimate
         const hlc3 = (liveData.high + liveData.low + liveData.price) / 3;
-        liveData.qvDollar = hlc3 * parseFloat(data.v) / 24; // hourly estimate
-
+        const vol5min = parseFloat(data.v) / 288;
+        liveData.qvDollar = hlc3 * vol5min;
+ 
         updatePairHeader();
         updateSignals();
         calcOutput();
         document.getElementById('lastUpdate').textContent = 'Updated ' + new Date().toTimeString().slice(0,8);
       }
-
+ 
       if(data.e === 'aggTrade'){
         const price    = parseFloat(data.p);
         const qty      = parseFloat(data.q);
         const dollarVal = price * qty;
         const isBuy    = !data.m;
         const thresh   = parseFloat(document.getElementById('whaleThresh').value) || 100000;
-
+ 
         // Accumulate buy/sell
         if(isBuy) liveData.buyVol = (liveData.buyVol||0) + dollarVal;
         else       liveData.sellVol = (liveData.sellVol||0) + dollarVal;
-
+ 
         const totalTV = (liveData.buyVol||0) + (liveData.sellVol||0);
         if(totalTV > 0) liveData.buyPct = (liveData.buyVol / totalTV) * 100;
-
+ 
         // Whale detection
         if(dollarVal >= thresh){
           liveData.whaleCount = (liveData.whaleCount||0) + 1;
@@ -643,21 +655,21 @@ function connectWS(){
       }
     } catch(e){}
   };
-
+ 
   ws.onclose = () => {
     document.getElementById('pulseDot').classList.add('off');
     document.getElementById('statusTxt').textContent = 'DISCONNECTED — reload pair';
   };
-
+ 
   // Refresh depth every 15s
   clearInterval(depthTimer);
   depthTimer = setInterval(fetchDepth, 15000);
-
+ 
   // Refresh relative vol every 60s
   clearInterval(refreshTimer);
   refreshTimer = setInterval(fetchRelativeVolume, 60000);
 }
-
+ 
 // ═══════════════════════════════════════════
 //  UPDATE PAIR HEADER
 // ═══════════════════════════════════════════
@@ -668,13 +680,13 @@ function updatePairHeader(){
   chEl.style.color  = liveData.change >= 0 ? 'var(--green)' : 'var(--red)';
   document.getElementById('pairVol').textContent = '24h Vol: ' + fmt$(liveData.vol24);
 }
-
+ 
 // ═══════════════════════════════════════════
 //  UPDATE SIGNAL CONDITIONS
 // ═══════════════════════════════════════════
 function updateSignals(){
   const d = liveData;
-
+ 
   // SESSION VOL
   if(!overrides.sess){
     const sessOk = d.sessionVol >= 10000000;
@@ -685,7 +697,7 @@ function updateSignals(){
                             fmt$(d.sessionVol) + ' — below min $10M';
     setRow('sess', signals.sess, level, signals.sess ? 'green' : 'red');
   }
-
+ 
   // QV DOLLAR
   if(!overrides.qv){
     const qvOk  = d.qvDollar >= 100000;
@@ -696,14 +708,14 @@ function updateSignals(){
                            fmt$(d.qvDollar) + ' — below min $100K';
     setRow('qv', signals.qv, level, signals.qv ? 'green' : 'red');
   }
-
+ 
   // RELATIVE VOLUME
   if(!overrides.rv){
     signals.rv = d.relVol >= 5;
     const rvStr = d.relVol.toFixed(1) + 'x vs 5-day avg ' + (signals.rv ? '— ELEVATED ✓' : '— NORMAL');
     setRow('rv', signals.rv, rvStr, signals.rv ? 'green' : 'dim');
   }
-
+ 
   // BUY PRESSURE
   if(!overrides.bp){
     signals.bp = d.buyPct >= 55;
@@ -711,7 +723,7 @@ function updateSignals(){
                   (signals.bp ? 'BUY DOMINANT ✓' : d.buyPct <= 45 ? 'SELL DOMINANT ✗' : 'BALANCED');
     setRow('bp', signals.bp, bpStr, signals.bp ? 'green' : d.buyPct <= 45 ? 'red' : 'yellow');
   }
-
+ 
   // WHALE
   if(!overrides.whale){
     const wc = d.whaleCount || 0;
@@ -726,7 +738,7 @@ function updateSignals(){
       setRow('whale', false, 'No whale trades detected yet (threshold: ' + fmt$(parseFloat(document.getElementById('whaleThresh').value)||100000) + ')', 'dim');
     }
   }
-
+ 
   // VWAP — always manual
   if(signals.vwap === null){
     document.getElementById('val-vwap').textContent = 'Check TradingView — is price bouncing off VWAP 21?';
@@ -736,19 +748,19 @@ function updateSignals(){
     document.getElementById('row-vwap').className = 'signal-row pending';
   }
 }
-
+ 
 function setRow(key, isYes, valueText, valueColor){
   const row   = document.getElementById('row-' + key);
   const badge = document.getElementById('badge-' + key);
   const val   = document.getElementById('val-' + key);
-
+ 
   row.className   = 'signal-row ' + (isYes ? 'yes' : 'no');
   badge.textContent = isYes ? 'YES' : 'NO';
   badge.className = 'sig-badge ' + (isYes ? 'YES' : 'NO');
   val.textContent = valueText;
   val.className   = 'sig-value ' + valueColor;
 }
-
+ 
 function setAllBadges(txt){
   ['sess','qv','rv','bp','whale','vwap'].forEach(k => {
     document.getElementById('badge-' + k).textContent = txt;
@@ -758,7 +770,7 @@ function setAllBadges(txt){
     document.getElementById('val-' + k).className     = 'sig-value dim';
   });
 }
-
+ 
 // ═══════════════════════════════════════════
 //  OVERRIDE — manual toggle
 // ═══════════════════════════════════════════
@@ -778,7 +790,7 @@ function overrideSig(key){
   }
   calcOutput();
 }
-
+ 
 function setVwap(val){
   signals.vwap = val;
   document.getElementById('val-vwap').textContent   = val ? '✓ Green bounce candle closed above VWAP 21' : '✗ VWAP 21 bounce not yet confirmed';
@@ -790,30 +802,30 @@ function setVwap(val){
   document.getElementById('vwap-no').style.borderColor  = !val ? 'var(--red)'  : 'rgba(255,51,85,.3)';
   calcOutput();
 }
-
+ 
 // ═══════════════════════════════════════════
 //  CALCULATE OUTPUT
 // ═══════════════════════════════════════════
 function calcOutput(){
   const confirmed = Object.values(signals).filter(v => v === true).length;
   const score     = confirmed;
-
+ 
   // Score display
   document.getElementById('scoreBig').textContent = score;
   const barPct   = (score / 6) * 100;
   const barColor = score >= 5 ? 'var(--yellow)' : score >= 4 ? 'var(--green)' : score >= 2 ? 'var(--accent)' : 'var(--red)';
   document.getElementById('scoreBar').style.width      = barPct + '%';
   document.getElementById('scoreBar').style.background = barColor;
-
+ 
   const ring = document.getElementById('scoreRing');
   const big  = document.getElementById('scoreBig');
-
+ 
   // Determine grade
   const vwapYes = signals.vwap === true;
   const vwapNo  = signals.vwap === false;
-
+ 
   let grade, gTitle, gDesc;
-
+ 
   if(vwapNo){
     grade='skip'; gTitle='SKIP';
     gDesc='VWAP 21 bounce not confirmed — this is the mandatory entry trigger. Wait for the green candle close above VWAP 21 on your chart.';
@@ -831,7 +843,7 @@ function calcOutput(){
     gDesc=score < 3 ? 'Too few conditions confirmed (' + score + '/6). Preserve capital. The next setup will come.' :
                       'VWAP bounce not yet confirmed. Wait for it — do not anticipate.';
   }
-
+ 
   ring.className      = 'score-ring ' + grade;
   big.style.color     = grade==='gold'?'var(--yellow)':grade==='good'?'var(--green)':'var(--red)';
   const vb = document.getElementById('verdictBox');
@@ -841,7 +853,7 @@ function calcOutput(){
   vt.className   = 'verdict-title ' + grade;
   document.getElementById('verdictDesc').textContent = gDesc;
   document.getElementById('verdictDesc').style.color = grade==='gold'?'var(--yellow)':grade==='good'?'var(--green)':'#8aa0b0';
-
+ 
   // Position sizing
   const bal    = parseFloat(document.getElementById('pBalance').value) || 1000;
   const riskPct = parseFloat(document.getElementById('pRiskPct').value) || 0.01;
@@ -849,18 +861,18 @@ function calcOutput(){
   const stop   = parseFloat(document.getElementById('pStop').value) || 0;
   const target = parseFloat(document.getElementById('pTarget').value) || 0;
   const tf     = document.getElementById('pTF').value;
-
+ 
   // Adjust risk by grade
   const riskMult = grade==='skip' ? 0 : grade==='gold' ? 1.0 : gTitle.includes('ACCEPT') ? 0.5 : 1.0;
   const riskAmt  = bal * riskPct * riskMult;
-
+ 
   if(entry > 0 && stop > 0 && entry !== stop && grade !== 'skip'){
     const stopDist  = Math.abs(entry - stop) / entry;
     const posUnits  = stopDist > 0 ? riskAmt / (entry * stopDist) : 0;
     const posVal    = posUnits * entry;
     const profit    = target > 0 ? posUnits * (target - entry) : 0;
     const rrr       = stopDist > 0 && target > 0 ? Math.abs(target-entry) / Math.abs(entry-stop) : 0;
-
+ 
     set('oRisk',   '$' + riskAmt.toFixed(2),    'red');
     set('oSize',   posUnits.toFixed(4) + ' u',  'accent');
     set('oValue',  '$' + posVal.toFixed(2),      '');
@@ -878,7 +890,7 @@ function calcOutput(){
     set('oType',  tf==='scalp'?'SCALP':tf==='position'?'POSITION':'SWING', 'purple');
     set('oGrade', grade.toUpperCase(), grade==='gold'?'yellow':'green');
   }
-
+ 
   // Checklist
   const rrrVal = entry>0&&stop>0&&target>0 ? Math.abs(target-entry)/Math.abs(entry-stop) : 0;
   const checks = [
@@ -894,24 +906,24 @@ function calcOutput(){
     { ok: rrrVal >= 3,         txt: 'Risk/Reward above 3:1 (ideal)' },
     { ok: entry>0&&stop>0,     txt: 'Entry and stop loss defined' },
   ];
-
+ 
   document.getElementById('checklistEl').innerHTML = checks.map(c=>{
     const icon  = c.ok ? '✅' : '⬜';
     const color = c.ok ? 'var(--green)' : 'var(--dim)';
     return `<div class="check-item"><span class="check-icon">${icon}</span><span style="color:${color}">${c.txt}</span></div>`;
   }).join('');
-
+ 
   // Log button
   const logBtn = document.getElementById('logBtn');
   logBtn.className = grade==='gold' ? 'log-btn gold-btn' : 'log-btn';
 }
-
+ 
 function set(id, val, colorClass){
   const el = document.getElementById(id);
   el.textContent = val;
   el.className   = 'out-value ' + colorClass;
 }
-
+ 
 // ═══════════════════════════════════════════
 //  REFRESH DATA
 // ═══════════════════════════════════════════
@@ -921,7 +933,7 @@ async function refreshData(){
   updateSignals();
   calcOutput();
 }
-
+ 
 // ═══════════════════════════════════════════
 //  LOG TRADE
 // ═══════════════════════════════════════════
@@ -938,11 +950,11 @@ function logTrade(){
   const rrr    = document.getElementById('oRRR').textContent;
   const profit = document.getElementById('oProfit').textContent;
   const now    = new Date().toISOString().slice(0,19).replace('T',' ');
-
+ 
   const condMet = Object.entries(signals).filter(([k,v])=>v===true).map(([k])=>({
     sess:'Session Vol',qv:'QV Dollar',rv:'Rel Vol',bp:'Buy Pressure',whale:'Whale',vwap:'VWAP Bounce'
   }[k])).join(', ');
-
+ 
   const log = `═══ TRADE SETUP LOG ═══
 Date/Time:    ${now}
 Pair:         ${pair}
@@ -950,7 +962,7 @@ Type:         ${tf.toUpperCase()}
 Grade:        ${grade}
 Signal Score: ${score}/6
 Conditions:   ${condMet || 'None'}
-
+ 
 Entry:        $${entry}
 Stop Loss:    $${stop}
 Target:       $${target}
@@ -958,18 +970,18 @@ Risk Amount:  ${risk}
 Position:     ${size}
 RRR:          ${rrr}
 Target P&L:   ${profit}
-
+ 
 Session Vol:  ${fmt$(liveData.sessionVol)}
 QV Dollar:    ${fmt$(liveData.qvDollar)}
 Rel Vol:      ${liveData.relVol.toFixed(1)}x
 Buy Pressure: ${liveData.buyPct.toFixed(1)}%
 Whale Count:  ${liveData.whaleCount}
 ══════════════════════════`;
-
+ 
   document.getElementById('logContent').textContent = log;
   document.getElementById('logModal').style.display = 'flex';
 }
-
+ 
 function copyLog(){
   const text = document.getElementById('logContent').textContent;
   navigator.clipboard.writeText(text).then(()=>{
@@ -978,11 +990,11 @@ function copyLog(){
     setTimeout(()=>{ btn.textContent = 'Copy to Clipboard'; }, 2000);
   });
 }
-
+ 
 function closeModal(){
   document.getElementById('logModal').style.display = 'none';
 }
-
+ 
 // ═══════════════════════════════════════════
 //  RESET
 // ═══════════════════════════════════════════
@@ -1004,7 +1016,7 @@ function resetAll(){
   updateSignals();
   calcOutput();
 }
-
+ 
 // ═══════════════════════════════════════════
 //  ERROR
 // ═══════════════════════════════════════════
@@ -1014,11 +1026,25 @@ function showError(msg){
   el.style.display = 'block';
   setTimeout(()=>{ el.style.display='none'; }, 6000);
 }
-
+ 
 // Auto-fill entry with current price when loaded
 document.getElementById('pEntry').addEventListener('focus', function(){
   if(!this.value && liveData.price > 0) this.value = liveData.price.toFixed(8).replace(/\.?0+$/,'');
 });
+ 
+// Press Enter on pair input to load
+document.getElementById('pairInput').addEventListener('keydown', function(e){
+  if(e.key === 'Enter') loadPair();
+});
+ 
+// Auto-uppercase pair input
+document.getElementById('pairInput').addEventListener('input', function(){
+  const pos = this.selectionStart;
+  this.value = this.value.toUpperCase();
+  this.setSelectionRange(pos, pos);
+  // Auto-append USDT if not present and looks complete
+});
 </script>
 </body>
 </html>
+
